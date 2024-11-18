@@ -7,9 +7,9 @@ export const CategoriaNav = () => {
     <View style={styles.container}>
       <Text style={styles.text}>Séries</Text>
       <Text style={styles.text}>Filmes</Text>
-      <View style={styles.categoryContainer}>
-        <Text style={styles.text}>Categorias  </Text>
-        <Entypo style={styles.icon} name="chevron-small-down" size={24} color="white" />
+      <View style={[styles.text, styles.categoryContainer]}>
+        <Text style={styles.categoryText}>Categorias</Text>
+        <Entypo name="chevron-small-down" size={20} color="white" style={styles.icon} />
       </View>
     </View>
   );
@@ -32,13 +32,21 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     borderColor: 'white',
     color: 'white',
+    textAlign: 'center',
   },
   categoryContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
+    paddingRight: 10, 
+  },
+  categoryText: {
+    color: 'white',
+    fontSize: 12.5,
+    marginRight: 5, 
   },
   icon: {
-    right:35,
+    marginLeft: 5,
   },
 });
 

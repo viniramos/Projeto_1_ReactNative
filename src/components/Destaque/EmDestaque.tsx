@@ -6,21 +6,19 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 export const Destaque = () => {
   return (
     <View style={styles.containerColor}>
-      {/* O container vermelho */}
+      
       <View style={styles.container} />
 
-      {/* A imagem */}
       <Image source={require("../../../assets/CidadeInvisivel.png")} style={styles.image} />
 
-      {/* Texto e ícones sobre a imagem */}
       <View style={styles.overlay}>
         <View style={styles.actionContainer}>
-          {/* Botão Assistir */}
+          
           <View style={[styles.button, styles.buttonAssistir]}>
             <Foundation name="play" size={20} color="black" />
             <Text style={styles.text}>Assistir</Text>
           </View>
-          {/* Botão Minha Lista */}
+          
           <View style={[styles.button, styles.buttonMinhaLista]}>
             <AntDesign name="plus" size={20} color="white" />
             <Text style={[styles.text, styles.textMinhaLista]}>Minha lista</Text>
@@ -84,15 +82,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 23,
   },
   buttonMinhaLista: {
-    backgroundColor: 'rgba(112, 111, 91, 0.8)', // Fundo diferenciado para "Minha lista"
+    backgroundColor: 'rgba(112, 111, 91, 0.8)', 
   },
   text: {
     fontSize: 15,
     marginLeft: 10,
-    color: 'black', // Cor padrão para o texto
+    color: 'black', 
   },
   textMinhaLista: {
-    color: 'white', // Cor branca para o texto "Minha lista"
+    color: 'white', 
   },
 });
 
